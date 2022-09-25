@@ -86,7 +86,7 @@ Overall, according to the data profiling reports, the data looks good; however, 
 - Special characters ("\n") in the `location` string variable of the sensor location dataset. These are fixed in the next data wrangling section.
 - Missing values in the `direction_1` and `direction_2` variables of the sensor location dataset. Further study is warranted to understand the impact of this on further analysis related to the direction of walking pedestrian.   
 <p align="center">
-  <img src="./img/missing values.png" width=50% height=auto>
+  <img src="./img/missing values.png" width=80% height=auto>
 </p>
 
 Given the time constraint for this project, this documentation is still a `work-in-progress` and apparently, more data checking could have been done and potentially more data issues might have been found. In addition to the data profiling report, there could be other extra QA that can be done, for examples:
@@ -129,7 +129,7 @@ The steps to compute this aggregate analytics summary data include:
 By providing the rank in the summary statistics data, any downstream analysis can pick their desired top N. The resulted summary data table `TOP_N_LOCATIONS_BY_DAY` was staged in the SQL database system for further use in downstream analysis, and it is also publicly available [here](https://github.com/hoangtamvo/pedestrian-analytics/blob/5d3db52d4c2be8cd89cd082df575aa81d5c62b08/output/TOP_N_LOCATIONS_BY_DAY.csv)  for reference. Further, the figure below provides a sneak peek of this summary data table, which is showing the top 10 locations (most pedestrians) on Friday.
 
 <p align="center">
-  <img src="./img/stats1.png" width=75% height=auto>
+  <img src="./img/stats1.png" width=90% height=auto>
 </p>
 
 
@@ -141,7 +141,7 @@ The calculation of this statistics summary is similar to that of the above Stats
 Similar to Stats 1, by providing the rank in the summary statistics data, any downstream analysis can pick their desired top N. The resulted summary data table `TOP_N_LOCATIONS_BY_MONTH` was staged in the SQL database system for further use in downstream analysis, and it is also publicly available [here](https://github.com/hoangtamvo/pedestrian-analytics/blob/5d3db52d4c2be8cd89cd082df575aa81d5c62b08/output/TOP_N_LOCATIONS_BY_MONTH.csv)  for reference. Further, the figure below provides a sneak peek of this summary data table, which is showing the top 10 locations (most pedestrians) in April.
 
 <p align="center">
-  <img src="./img/stats2.png" width=75% height=auto>
+  <img src="./img/stats2.png" width=90% height=auto>
 </p>
 
 
@@ -156,7 +156,7 @@ The steps to compute this aggregate analytics summary data include:
 Note that the decline in traffic is calculated in absolute values (which is also used to choose the most decline location), whereas the decline in percentage values is also calculated and returned. The resulted summary data table `HOURLY_COUNTS_DECLINE_LOCKDOWN` was staged in the SQL database system for further use in downstream analysis, and it is also publicly available [here](https://github.com/hoangtamvo/pedestrian-analytics/blob/5d3db52d4c2be8cd89cd082df575aa81d5c62b08/output/HOURLY_COUNTS_DECLINE_LOCKDOWN.csv)  for reference. Further, the figure below provides a sneak peek of this summary data table, which is showing the top 5 locations with most decline in traffic during lockdowns compared to precovid period.
 
 <p align="center">
-  <img src="./img/stats3.png" width=75% height=auto>
+  <img src="./img/stats3.png" width=90% height=auto>
 </p>
 
 
@@ -171,7 +171,7 @@ The steps to compute this aggregate analytics summary data include:
 Stats 4 and Stats 3 share many common implemented functions to do similar calculation but with different parameters. In addition, similar to Stats 3, the growth in traffic is calculated in absolute values (which is also used to choose the most growth location), whereas the growth in percentage values is also calculated and returned. The resulted summary data table `HOURLY_COUNTS_GROWTH_AFTER_LOCKDOWN` was staged in the SQL database system for further use in downstream analysis, and it is also publicly available [here](https://github.com/hoangtamvo/pedestrian-analytics/blob/5d3db52d4c2be8cd89cd082df575aa81d5c62b08/output/HOURLY_COUNTS_GROWTH_AFTER_LOCKDOWN.csv)  for reference. Further, the figure below provides a sneak peek of this summary data table, which is showing the top 5 locations with most growth in traffic during the last year after lockdowns periods.
 
 <p align="center">
-  <img src="./img/stats4.png" width=75% height=auto>
+  <img src="./img/stats4.png" width=90% height=auto>
 </p>
 
 
@@ -183,7 +183,7 @@ This statistics is **beyond the requirements** of the coding test. In this stati
 The resulted summary data table `AVG_HOURLY_COUNTS_BY_DAY_TIME` was staged in the SQL database system for further use in downstream analysis, and it is also publicly available [here](https://github.com/hoangtamvo/pedestrian-analytics/blob/5d3db52d4c2be8cd89cd082df575aa81d5c62b08/output/AVG_HOURLY_COUNTS_BY_DAY_TIME.csv)  for reference. Further, the figure below provides a sneak peek of this summary data table, which is showing the average hourly counts by time of the day (0-23 hours) on Friday at the location of sensor id 16. 
 
 <p align="center">
-  <img src="./img/stats5.png" width=75% height=auto>
+  <img src="./img/stats5.png" width=90% height=auto>
 </p>
 
 
@@ -198,7 +198,7 @@ In this another extra statistics, for each location, we calculate the average ho
 The resulted summary data table `AVG_HOURLY_COUNTS_WEEKDAY_WEEKEND` was staged in the SQL database system for further use in downstream analysis, and it is also publicly available [here](https://github.com/hoangtamvo/pedestrian-analytics/blob/5d3db52d4c2be8cd89cd082df575aa81d5c62b08/output/AVG_HOURLY_COUNTS_WEEKDAY_WEEKEND.csv)  for reference. Further, the figure below provides a sneak peek of this summary data table, which is showing the average hourly counts by time of the day (0-23 hours) during weekday and weekend at the location of sensor id 16. 
 
 <p align="center">
-  <img src="./img/stats6.png" width=75% height=auto>
+  <img src="./img/stats6.png" width=90% height=auto>
 </p>
 
 
