@@ -16,8 +16,8 @@ The Pedestrian Counting System datasets include locations of pedestrian sensor d
 - [Data wrangling and enhancing](#wrangling)
 - [Extracting statistics and metrics](#stats)
 - [Data model for staging](#data-model)
-- [Visual analytics](#visual-analytics)
 - [System requirements](#requirements)
+- [Visual analytics](#visual-analytics)
 - [References](#references)
 
 
@@ -245,7 +245,7 @@ To execute the automated load and stage program:
 
 ## Visual analytics with interactive dashboards <a name="visual-analytics"> </a>
 
-The extracted statistics described in the above section provide opportunities and use cases for interesting visual analytics applications. Two possibilities are sketched in the following while the full implementation will be developed and published into this same repository once they are ready.
+The extracted statistics described in the above section provide opportunities and use cases for interesting visual analytics applications. Two possibilities are sketched in the following while the full implementations are being developed and published into this same repository once they are ready.
 
 ### Spatial analysis and Peak hours traffic pattern
 
@@ -255,7 +255,7 @@ An application is being developed using R and RShiny to create a simple **intera
   <img src="./img/dashboard.png">
 </p>
 
-### Weekday vs. weekend traffic 
+### Weekday vs. weekend traffic analysis
 
 Another application is also being developed using D3js to create a simple **interactive narrative visualisation** that communicates specific findings to a general audience, e.g., the difference in traffic patterns of weekday against weekend. The extra statistics (weekend vs. weekday traffic analysis) calculated in the data pipeline workflow as described in the [previous section](#stats) makes this application possible.
 
