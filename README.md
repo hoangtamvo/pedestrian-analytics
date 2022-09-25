@@ -27,7 +27,7 @@ The overall data pipline architecture is depicted in the diagram below. The main
 
 - **Data sources**: API endpoints to retrieve the two datasets from external provider [[1,2]](#references)
 
-- **Data flow**: a directed acyclic graphs (**DAG**) of tasks, which is orchestrated by **Airflow** [[3]](#references) (or similar tool like **Jenkins** [[4]](#references)), and executed on a general processing system such as **Spark** [[5]](#references)
+- **Data flow**: a directed acyclic graphs (**DAG**) of tasks, which is orchestrated by **Airflow** [[3]](#references) (or similar tool like **Jenkins** [[4]](#references)), and executed on a general processing system such as **Spark** [[5]](#references). In this data pipeline workflow shown in the diagram, the tasks annotated with a table icon will stage their resulted data tables into the staging SQL database system for future use. 
 
 - **Staging and warehousing system**: this is a scalable SQL system (e.g., Amazon **Redshift**, Google Big Query, or Microft SQL server) to store staging data and potentially final target data for warehousing
 
